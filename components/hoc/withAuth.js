@@ -4,9 +4,11 @@ import BasePage from "../basePage";
 export default function (Component) {
   return class withAuth extends React.Component {
     static async getInitalProps(args) {
+      console.log("initial props render in with auth");
       const pageProps =
         (await Component.getInitalProps) &&
         (await Component.getInitalProps(args));
+      console.log(pageProps);
       return { ...pageProps };
     }
 

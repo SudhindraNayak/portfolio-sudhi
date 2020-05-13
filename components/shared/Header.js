@@ -76,9 +76,9 @@ const Header = (props) => {
             <NavItem className="port-navbar-item">
               <BsNavLink route="/cv" title="CV" />
             </NavItem>
-            {/* <NavItem className="port-navbar-item">
+            <NavItem className="port-navbar-item">
               <BsNavLink route="/secret" title="Secret" />
-            </NavItem> */}
+            </NavItem>
             {!isAuthenticated && (
               <NavItem className="port-navbar-item">
                 <Login />
